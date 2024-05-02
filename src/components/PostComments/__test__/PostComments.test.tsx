@@ -20,7 +20,7 @@ describe("Teste para o componente PostComment", () => {
     fireEvent.click(commentButton)
     expect(screen.getByText("Que post legal!")).toBeInTheDocument();
 
-    // Adiciona o primeiro comentário
+    // Adiciona o segundo comentário
     fireEvent.change(textarea, {target: {value: 'Que post engraçado kkkkk.'}} )
     fireEvent.click(commentButton)
     expect(screen.getByText("Que post engraçado kkkkk.")).toBeInTheDocument();
